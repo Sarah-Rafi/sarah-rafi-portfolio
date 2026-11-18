@@ -60,7 +60,6 @@ const SECTIONS = ['home', 'about', 'experience', 'projects', 'skills', 'contact'
     </main>
 
     <footer class="container">
-      <p>© {{ year }} Sarah Rafi · Built with Angular 22, signals and lots of CSS.</p>
       <a href="#home">Back to top ↑</a>
     </footer>
   `,
@@ -109,7 +108,6 @@ const SECTIONS = ['home', 'about', 'experience', 'projects', 'skills', 'contact'
 export class App {
   protected readonly theme = inject(ThemeService);
   protected readonly sections = SECTIONS;
-  protected readonly year = new Date().getFullYear();
   protected readonly active = signal<string>('home');
   protected readonly scrolled = signal(false);
   protected readonly menuOpen = signal(false);
