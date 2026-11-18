@@ -38,7 +38,13 @@ npm test           # checks every project has a title, a description, a stack an
 git add -A && git commit -m "Add My New App" && git push
 ```
 
-Vercel redeploys automatically from GitHub within about a minute.
+Then publish it with:
+
+```bash
+npx vercel --prod
+```
+
+(Once the Vercel GitHub App is connected, which is a one-time setup, `git push` alone redeploys automatically.)
 
 ---
 
