@@ -12,7 +12,6 @@ import { Particles } from '../shared/particles';
       <div class="mesh" aria-hidden="true"><span></span><span></span><span></span></div>
       <app-particles />
       <div class="container inner">
-        <p class="hello"><span class="dot"></span> Available for Angular roles · {{ p.location }}</p>
         <h1>
           <span class="line"><span>Hi, I’m</span></span>
           <span class="line"><span class="grad-text name">{{ p.name }}</span></span>
@@ -38,12 +37,6 @@ import { Particles } from '../shared/particles';
     .mesh span:nth-child(2) { background: var(--accent-2); bottom: 0; right: 5%; animation-delay: -6s; opacity: .6; }
     .mesh span:nth-child(3) { background: var(--accent-3); top: 30%; left: 40%; width: 30vmax; height: 30vmax; animation-delay: -12s; opacity: .5; }
     @keyframes float { to { transform: translate(8vw, -6vh) scale(1.15) rotate(40deg); } }
-
-    .hello { display: inline-flex; align-items: center; gap: 10px; padding: 8px 16px; border-radius: 999px;
-      border: 1px solid var(--card-border); background: var(--card); font-size: 14px; color: var(--muted);
-      animation: rise 1s var(--ease) both; backdrop-filter: blur(10px); }
-    .dot { width: 8px; height: 8px; border-radius: 50%; background: #3ddc84; box-shadow: 0 0 0 0 #3ddc84; animation: ping 2s infinite; }
-    @keyframes ping { 70% { box-shadow: 0 0 0 10px transparent; } }
 
     h1 { font-size: clamp(48px, 10vw, 128px); margin: 24px 0 12px; }
     .line { display: block; overflow: hidden; }
